@@ -13,11 +13,11 @@ const ProductDetails = () => {
   const { idMeal, strMeal, strMealThumb, strInstructions, strYoutube } =
     meals[0];
   return (
-    <div className="flex my-20 gap-20 justify-center  px-5 md:px-12">
-      <div className="w-1/2">
+    <div className="flex flex-col lg:flex-row my-20 gap-20 justify-center  px-5 md:px-12">
+      <div className="lg:w-1/2">
         <img src={strMealThumb} alt="" />
       </div>
-      <div className="w-2/5 mx-auto">
+      <div className="lg:w-2/5 mx-auto">
         <h2 className="text-2xl mb-5 font-bold">{strMeal}</h2>
         <p>
           <span className="font-semibold text-xl">Instraction:</span>{' '}
